@@ -2,7 +2,7 @@ import React from 'react'
 import { useReset } from '../hooks/useReset'
 
 const Formulario = () => {
-  const {handleSubmit,dataForm,setdataForm} = useReset()
+  const {handleSubmit,dataForm,setDataForm} = useReset()
 
   return (
     <div className='Form'>
@@ -20,7 +20,7 @@ const Formulario = () => {
            method="POST" >
 
         <input 
-        onChange={e=>setdataForm(e.target.value)} 
+        onChange={e => setDataForm(e.target.value)} 
         value={dataForm.nombre} 
         type="text" 
         className="form_input" 
@@ -30,7 +30,7 @@ const Formulario = () => {
          id="name"/>
 
         <input 
-         onChange={e=>setdataForm(e.target.value)} 
+         onChange={e => setDataForm(e.target.value)} 
         value={dataForm.email}
          type="email"
           className="form_input" 
@@ -40,7 +40,7 @@ const Formulario = () => {
             id="email"/>
 
         <textarea 
-         onChange={e=>setdataForm(e.target.value)} 
+         onChange={e=>setDataForm(e.target.value)} 
         value={dataForm.mensaje}
          className="form_input form_input--message" 
          placeholder="Message:"

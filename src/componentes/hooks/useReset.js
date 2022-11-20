@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
 export const useReset = () => {
-    const [dataForm, setdataForm] = useState({
+    const [dataForm, setDataForm] = useState({
         nombre: '',
-        email:'',
-        mensaje:''
+        email: '',
+        mensaje: ''
       })
       const dataInitial = {
         nombre: '',
-          email:'',
-          mensaje:''
+          email: '',
+          mensaje: ''
       }
       const handleSubmit = () => {
         setTimeout(()=>{
-          setdataForm(dataInitial)
+          setDataForm(dataInitial)
         },1000)
       }
   return{
-setdataForm,
+setDataForm,
 dataForm,
 handleSubmit
   }

@@ -9,6 +9,7 @@
 --Ellipse_11: 380.97px;
 --Ellipse_10: 260.44px;
 --Ellipse_9: 124.14px;
+--Margin: 9em 0em 1em;
 }
 *{
 margin: 0;
@@ -16,7 +17,18 @@ padding: 0;
 list-style: none;
 text-decoration: none;
 }
-
+a{
+  color: var(--box_color_text_white);
+}
+h1{
+  color: var(--box_color_text_white);
+}
+p{
+  color: var(--box_color_subtext_white);
+}
+.BODY{
+  background-color: #1e1e1e;
+}
   .Barra {
 height: 5em;
 display: grid;
@@ -25,13 +37,13 @@ gap: 20em;
 text-align: center;
 align-items: center;
 }
-  .Barra ul{
-display: grid;
-grid-template-columns: 50% auto;
+.Barra ul{
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
   .Present{
-margin-top: 3em ;
+margin: var(--Margin);
 }
   .Titulo{
 text-align: center;
@@ -49,6 +61,7 @@ text-align: center;
   .Proyectos{
 display: flex;
 justify-content: center;
+margin:var(--Margin);
 }
 
   .Cuadro-negro{
@@ -91,8 +104,9 @@ background-color: var(--box_color_gray);
 background-color: var(--box_color_gray);
 }
 
+    /* ----------Skills-------- */
 .Skill{
-    margin: 114px 0px;
+    margin: var(--Margin);
     
 }
 .Container_Tittle{
@@ -310,5 +324,21 @@ gap: 3em;
   .form_input--message{
     max-width: 200px;
     min-width: 200px;
-    min-height: 40px;
+    min-height: 156px;
   }
+  .Bas_page{
+    
+    margin: 5em 0em 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Bas_page p{
+   font-size: 20px;
+   background-color: #0000;
+  }
+
+  .Social-red ul{
+  display: flex;
+  gap: 1em;
+  }  
