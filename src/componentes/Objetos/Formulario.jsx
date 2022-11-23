@@ -8,7 +8,7 @@ const Formulario = () => {
     <div className='Form'>
       <div className="Video_form">
          <video className='Video_technology'  loop autoPlay controls>
-                  <source src='/public/gifs/video.MP4' type='video/mp4' />
+                  <source src='/Portafolio_new/public/gifs/video.MP4' type='video/mp4' />
                 </video>
                 </div>
 
@@ -50,8 +50,8 @@ const Formulario = () => {
 
         <input 
         type="submit" 
-         target='_blank'
-          value="Send"
+         target="_blank"
+          value="Update"
           className="form_cta"/>
         </form>
 

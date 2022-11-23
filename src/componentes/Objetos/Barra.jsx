@@ -8,7 +8,7 @@ const Barra = () => {
 
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Download CV</a></li>
+                <li className='Btn_download'><a download='Feiberth Cv' href='./Cv.pdf'>Download CV</a></li>
             </ul>
         </div>
     </div>
