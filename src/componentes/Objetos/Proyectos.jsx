@@ -4,6 +4,7 @@ import './Style/Style.css'
 const Proyectos = () => {
   return (
     <div className='Proyectos'>
+      
         <div className="Degradado">
             <div className="Cuadro-negro">
                 <h1>Preyectos</h1>
@@ -12,6 +13,7 @@ const Proyectos = () => {
                </div>
             </div>
         </div>
+        
     </div>
   )
 }

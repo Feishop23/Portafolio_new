@@ -55,16 +55,23 @@ margin-bottom:1em;
 text-align: center;
 }
   .Btn_present{
-margin-top:2em ;
-text-align: center;
-}
-
-
+    margin-top:2em ;
+    text-align: center;
+  }
+  
+  
   .Proyectos{
-display: flex;
-justify-content: center;
-margin:var(--Margin);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:var(--Margin);
+  }
+  .Proyectos button{
+    background-color: #444444;
+    width: 30px;
+    height: 30px; 
+    z-index: 1;
+  }
 
   .Cuadro-negro{
 display: flex;
@@ -92,19 +99,15 @@ justify-content: center;
 grid-template-columns: 73% 33%;
 }
   .cuadros-gris-1{
-display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
 height: 355px;
 width: 482px;
 border-radius: 20px;
 background-color: var(--box_color_gray);
 }
-.cuadros-gris-2{
-    display: inline-block;
-    height: 355px;
-    width: 240px;
-    border-radius: 20px;
-background-color: var(--box_color_gray);
-}
+
 
     /* ----------Skills-------- */
 .Skill{
@@ -370,3 +373,25 @@ gap: 3em;
       padding: 15px 30px;
       border-radius: 5px;
     }
+
+      /* -------------Skills the props------------ */
+      .Skills_props_CardsSkills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        height: 3em;
+        
+      }
+      .Skills_props h4{
+        background-color: #ebb2b2;
+        padding: 0px 100px;
+      }
+      
+      .Skills_props_Skills h4{
+        padding: 0em 1em;
+        width: 100px;
+      }
+      
