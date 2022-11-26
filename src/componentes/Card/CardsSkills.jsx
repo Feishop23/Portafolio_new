@@ -37,7 +37,7 @@ const CardsSkills = () => {
   }
   const quantity = cards?.length
 
-  if(!Array.isArray(cards) || quantity === 0)
+    if(!Array.isArray(cards) || quantity === 0)
   return
 
 
