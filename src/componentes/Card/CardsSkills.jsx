@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Skills from './Skills'
 import '../Objetos/Style/Style.css'
+import useCount from '../hooks/useCount'
 
 
 const cards = [
@@ -24,33 +25,27 @@ const cards = [
     title: 'Card random Generator',
     description: 'Interact with these cards where the operation is to give you random values thanks to the use of API.'
   }
-  ]
+  ];
+  const quantity = cards.length
+
 const CardsSkills = () => {
-
-  const [count, setCount] = useState(0)
-
-  const rightText = () => {
-    setCount(count === quantity - 1 ? 0 : count + 1 )
-  }
-  const leftText = () => {
-    setCount(count === 0  ? quantity - 1 : count - 1)
-  }
-  const quantity = cards?.length
-
+  const {rightText,leftText,count} = useCount(quantity)
     if(!Array.isArray(cards) || quantity === 0)
   return
+   
 
 
   return (
     <div className='Skills_props_CardsSkills'>
-      <button onClick={leftText} >←</button>
+      <button onClick={leftText} ><i className='fas fa-left-long'></i></button>
         {cards.map(card => {
+          
           return(
-            <div>
+          <div className={count === card.id ? `slide active`: 'slide'}>
               { count === card.id && <Skills key={card.id} title={card.title}/>}
             </div>
         )})}
-        <button onClick={rightText} >→</button>
+        <button onClick={rightText} ><i className='fas fa-right-long'></i></button>
     </div>
   )
 }
