@@ -12,10 +12,10 @@ const Pie_Paginal = () => {
        </p>
        <div className="Social-red">
          <ul>
-           <li><a href="">Instagram</a></li>
-           <li><a href="">Twitter</a></li>
-           <li><a href="">linkedin</a></li>
-           <li><a href="">Github</a></li>
+           <li><a target='_blank' href="https://www.instagram.com/feiberth.portilla/"><i className='fab fa-instagram'></i></a></li>
+           <li><a target='_blank' href="https://twitter.com/FeiberthPorti"><i className='fab fa-twitter'></i></a></li>
+           <li><a target='_blank' href="https://www.linkedin.com/in/feiberth-portilla-7b7004241/"><i className='fab fa-linkedin'></i></a></li>
+           <li><a target='_blank' href="https://github.com/Feishop23"><i className='fab fa-github'></i></a></li>
          </ul>
        </div>
      </div>

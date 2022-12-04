@@ -43,6 +43,16 @@ align-items: center;
   display: grid;
   grid-template-columns: 50% 90%;
 }
+.Barra_li a{
+  padding: 16px 26px; border-radius: 5px;
+  transition: .5s ease-in;
+}
+.Barra_li a:hover{
+  padding: 16px 26px; border-radius: 5px;
+  background-color: #444444; transition: .5s ease-in;
+
+}
+ 
   /* --------Present-------- */
   .Present{
 margin: var(--Margin);
@@ -91,21 +101,23 @@ color: aliceblue;
 }
   .Cuadros-diseño{
 margin: 9em;
-}
-  .Contenedor-cuadros-grices{
-display: grid;
-width: 100%;
+display: flex;
+align-items: center;
 justify-content: center;
-grid-template-columns: 73% 33%;
+
 }
+  
   .cuadros-gris-1{
 display: flex;
 justify-content: center;
 align-items: center;
+text-align: center;
 height: 355px;
-width: 482px;
+width: 410px;
 border-radius: 20px;
 background-color: var(--box_color_gray);
+color: white;
+margin: 0px 100px;
 }
 
 
@@ -147,9 +159,31 @@ margin: auto;
   gap: 1em;
 }
 .Skill_box p{
-  padding: 0em 1em 3em 1em;
+  padding: 0em 1em 2em 1em;
   color: var(--box_color_subtext_white);
 }
+.Skill_box li{
+  justify-content: center;
+}
+.Skill_box i{
+  font-size: 50px;
+  padding: 30px 50px;
+  border-radius: 20px;
+  background-color: var(--box_color_gray);
+}
+.Skills_Photo{
+width: 350px;
+height: 300px;
+border-radius: 20px;
+}
+.slide{
+transition: 1s ease-in-out;
+opacity: 0;
+}
+.slide.active{
+  opacity: 1;
+}
+
 
 /* -------The Design Ellipse------ */
 .Ellipse_father{
@@ -209,8 +243,8 @@ top: 250px;
 .Ellipse_11::before{
   content: "";
 background-color: #ffffff;
-width: 30px;
-height: 30px;
+width: 25px;
+height: 25px;
 border-radius: 50px;
 position: absolute;
 z-index: 1;
@@ -221,13 +255,13 @@ right: 365px;
 .box_One{
   content: "";
 background-color:  rgb(255, 255, 255) ;
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 border-radius: 50px;
 position: absolute;
 z-index: 1;
 outline: 5px solid  rgba(255, 255, 255, 0.492);
-top: -14px;
+top: -2px;
 right: 0px;
 
 }
@@ -365,42 +399,48 @@ gap: 3em;
   display: flex;
   gap: 1em;
   }  
-
+  
+  .Social-red i{
+    font-size: 25px;
+    color: var(--box_color_text_white);
+    transition: 0.5s ease-in-out;
+  }
+  .Social-red i:hover{
+    transition: 0.5s ease-in-out;
+    color:var(--box_color_subtext_white);
+    
+  }
+ 
 
     /* ----Btn_dowload----- */
     .Btn_download a{
+      transition: 0.2s ease-in-out;
       background: var(--color_degrading);
       padding: 15px 30px;
       border-radius: 5px;
     }
+    .Btn_download a:hover{
+      transition: 0.2s ease-in-out;
+    color: var(--box_color_gray);
+    } 
+  
+   /* Skills_button */
 
-      /* -------------Skills the props------------ */
-      .Skills_props_CardsSkills{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      .Cuadros-diseño button {
+        background: none;
+        border: none;
+      }
+      .Cuadros-diseño button i{
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        font-size: 60px;
+        transition: 0.5s ease;
+      }
+      .Cuadros-diseño button i:hover{
+        color: #444444;
+        transition: 0.5s ease;
+      }
+      .Cuadros-diseño button i:active{
         color: white;
-        height: 3em;
-        transition: 2s ease-in-out;
-        
-      }
-      .Skills_props h4{
-        background-color: #ebb2b2;
-        padding: 0px 100px;
-      }
-      
-      .Skills_props_Skills h4{
-        padding: 0em 1em;
-        width: 100px;
-      }
-      
-      .slide{
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-
-      .slide.active{
-        opacity: 1;
+        transition: 0.01s ease;
       }
