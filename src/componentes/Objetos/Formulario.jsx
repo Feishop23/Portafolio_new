@@ -8,7 +8,7 @@ const Formulario = () => {
     <div className='Form'>
       <div className="Video_form">
          <video className='Video_technology'  loop autoPlay controls>
-                  <source src='/Portafolio_new/public/gifs/video.MP4' type='video/mp4' />
+                  <source src='/gifs/video.mp4' type='video/mp4' />
                 </video>
                 </div>
 
