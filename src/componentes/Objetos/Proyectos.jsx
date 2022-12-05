@@ -48,12 +48,13 @@ const Proyectos = () => {
       <div className="Degradado">
         <div className="Cuadro-negro">
           <h1>Preyectos</h1>
+          
           <div className="Cuadros-diseño">
             <button onClick={leftText}>
               <i className="fas fa-angle-left"></i>
             </button>
-
             <div className="cuadros-gris-1">
+
               {cards.map((card) => {
                 return (
                   <div className={count === card.id ? `active slide` : "slide"}>
@@ -64,7 +65,6 @@ const Proyectos = () => {
                 );
               })}
             </div>
-
             <button onClick={rightText}>
               <i className="fas fa-angle-right"></i>
             </button>

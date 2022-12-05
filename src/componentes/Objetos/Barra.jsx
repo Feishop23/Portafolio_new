@@ -4,7 +4,10 @@ const Barra = () => {
   return (
     <div>
         <div className="Barra">
-                <li><a href="">Icono</a></li>
+                <li className='Barra_PORT'>
+                  <a className='PORT' href="">PO</a>
+                  <a className='PORT' href="">RT</a>
+                  </li>
 
             <ul>
                 <li className='Barra_li'><a href="">Home</a></li>
