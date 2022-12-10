@@ -8,7 +8,7 @@ export const Habilidades = () => {
                <h1>Habilidades extras</h1>
            </div>
            <div className="Concept">
-               <p>Estas son mis habilidades extras en el hambito laboral y hobbits</p>
+               <p>Estas son mis habilidades extras en el hambito laboral y hobbits.</p>
            </div>
          
       </div>

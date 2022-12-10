@@ -5,8 +5,8 @@ const Concepto = () => {
   return (
     <div className='Concept'>
       <div className="Tittle_concept">
-        <h1>El mundo de la programacion.</h1>
-        <p>Es un mundo muy abierto cuando se trata de tecnologia y creacion, el concepto que mas me encanta sobre el tema es "Tienes la libertad de hacer y desacer el mundo tecnologico como gustes"</p>
+        <h1>Resumen sobre mi conocimiento con BD.</h1>
+        <p>Me paso trabajando, estudiando, practicando, creando y analizando  base de datos llegando a presentar un exelente servicio como programador FullStack dando a entender que mis servicio abastecen todo tipo de necesidades labolares y solucionando errores frecuentes basados en PostgreSQL y Json.js.</p>
         <div className="Btn_concept">
             <ul>
                 <li className='Btn_download'><a download='Feiberth Cv' href='./Cv.pdf'>Download CV</a></li>

@@ -5,12 +5,13 @@
 --box_color_dark: #18181C;
 --box_color_text_white: #FFFFFF;
 --box_color_subtext_white: #9E9E9E;
---Ellipse_13: 678px;
+--Ellipse_13: 610px;
 --Ellipse_12: 510.11px;
 --Ellipse_11: 380.97px;
 --Ellipse_10: 260.44px;
 --Ellipse_9: 124.14px;
 --Margin: 9em 0em 0em;
+--Margin_Ability: 1em 0em 0em;
 --Margin_for_the_form: 9em 0em;
 }
 *{
@@ -136,10 +137,11 @@ margin: 0px 100px;
     
 }
 .Container_Tittle{
-  margin: 0em 4em;
+  margin: 0em 0em;
 }
   .Tittle{
-    margin: 0em 0em 9px 0em;
+    display: inline-block;
+    margin: 0em 0em 0em 9em;
     font-weight: 500;
     font-size: 24px;
   }
@@ -214,6 +216,12 @@ border-radius: 50%;
 opacity: 0.5;
 border: 1px solid #50505074;
 }
+.Ellipse_13 img{
+  z-index: 1;
+  position: relative;
+  top: 5px;
+  width: 370px; height: 200px;
+}
 
 .Ellipse_12{
 display: flex;
@@ -249,8 +257,8 @@ border-radius: 50px;
 position: absolute;
 z-index: 1;
 outline: 5px solid rgba(255, 255, 255, 0.673);
-left: 280px;
-top: 250px;
+left: 190px;
+top: 428px;
 }
 .Ellipse_11::before{
   content: "";
@@ -276,25 +284,18 @@ outline: 5px solid  rgba(255, 255, 255, 0.492);
 top: -2px;
 right: 0px;
 
-}
+} 
 .Ellipse_10{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  border-radius: 50%;
-position: absolute;
-width: var(--Ellipse_10);
-height: var(--Ellipse_10);
-border: 1px solid #444444;
+
 }
 
-.Ellipse_9{
-position: absolute;
+.Ellipse_9{ 
+
 border-radius: 50%;
 width: var(--Ellipse_9);
 height: var(--Ellipse_9);
-background: #8D8D8D;
+background:rgb(87, 87, 87) ;
 }
 
   /* ---Animation the Ellipse_11::after--- */
@@ -309,19 +310,22 @@ background: #8D8D8D;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: var(--Margin);
+  margin: var(--Margin_Ability);
 }
-
+.Concept h1{
+  max-width: 700px;
+}
 .Tittle_concept H1{
   font-size: 48px;
-  max-width: 385px;
+  max-width: 500px;
   margin: 0em 0em 0.5em 0em;
 }
 
 .Tittle_concept p{
 text-align: start;
 font-size: 18px;
-max-width: 385px;
+max-width: 500px;
+margin: 0px 0px 45px 0px;
 }
 
 .Btn_concept{
@@ -373,6 +377,16 @@ gap: 3em;
     align-items: center;
     gap: 2em;
     max-width: 400px; 
+  }
+  .Title_Form{
+    position: relative;
+    bottom: 50px;
+    font-size: 48px;
+  }
+  .Concept_Form{
+    position: relative;
+    bottom: 35px;
+    max-width: 503px;
   }
   input{
     height: 44px;
@@ -477,3 +491,4 @@ gap: 3em;
         color: white;
         transition: 0.01s ease;
       }
+  

@@ -8,6 +8,7 @@ export const Ellipses = () => {
             <div className="Ellipse_11">
               <div className="box_One"></div>
                 <div className="Ellipse_10">
+
                    <div className="Ellipse_9">
 
                    </div>

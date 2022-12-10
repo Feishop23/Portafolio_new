@@ -14,6 +14,8 @@ const Formulario = () => {
 
                 <div className="Form">
                 <div className='Form_form'>
+      <h1 className='Title_Form'>Fomulario</h1>
+      <p className='Concept_Form'>Despues de este formulario te saldra la verificacion, confirma el capchat para que tu formulario sea enviado con exito.</p>
         <form onSubmit={handleSubmit}
          action="https://formsubmit.co/feiberth10portilla@hotmail.com" 
           target='_blank'

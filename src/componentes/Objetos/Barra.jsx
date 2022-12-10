@@ -5,8 +5,8 @@ const Barra = () => {
     <div>
         <div className="Barra">
                 <li className='Barra_PORT'>
-                  <a className='PORT' href="">PO</a>
-                  <a className='PORT' href="">RT</a>
+                  <a className='PORT' href="">P O</a>
+                  <a className='PORT' href="">R T</a>
                   </li>
 
             <ul>
